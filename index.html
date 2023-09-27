@@ -1,13 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <link rel="icon" type="icon" sizes="50x50" href="public/favicon.ico" />
+    <title>Hi i'm a Web developer. This is my portfolio</title>
+    <!-- SEO -->
+    <link rel="canonical" href="http://127.0.0.1:5173/" />
+    <meta
+      name="description"
+      content="Saya adalah web developer kreatif dengan pengalaman dalam menciptakan situs web menarik dan fungsional. Lihat portofolio saya untuk inspirasi kreasi digital " />
+    <meta
+      name="keywords"
+      content="Developer web freelance Indonesia, Web developer freelance, Portofolio website, Web Design, Web Development, Contoh desain website, Pembuatan website profesional, Jasa pembuatan website, Portofolio proyek web, Arif Triana" />
+    <meta name="author" content="Arif triana" />
+
+    <!-- Meta untuk Social Media Sharing -->
+    <meta property="og:title" content="My Dev Portfolio" />
+    <meta
+      property="og:description"
+      content="Saya adalah seorang yang mempelajari web programming. Lihat portofolio saya untuk inspirasi kreasi digital yang saya bangun." />
+    <meta
+      property="og:image"
+      content="http://127.0.0.1:5173/public/favicon.ico" />
+    <meta
+      property="og:url"
+      content="http://127.0.0.1:5173/public/favicon.ico" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="My Dev Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Saya adalah seorang yang mempelajari web programming. Lihat portofolio saya untuk inspirasi kreasi digital yang saya bangun." />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   </head>
-  <body>
+  <body style="background-color: #101630">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Arif Triana",
+        "url": "https://arif3ana.github.io/my-portfolio/",
+        "sameAs": [
+          "https://linkedin.com/in/arif-triana-48bb74254",
+          "https://github.com/arif3ana",
+          "https://www.instagram.com/arif.3ana/"
+        ],
+        "jobTitle": "Web Developer",
+        "description": "Saya Arif triana freelance web developer",
+        "image": "https://arif3ana.github.io/my-portfolio/",
+        "email": "arif.3ana@gmail.com",
+        "telephone": "+6285703020296",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. koreak sedong",
+          "addressLocality": "Cirebon",
+          "addressRegion": "Jawa Barat",
+          "postalCode": "12345",
+          "addressCountry": "Indonesia"
+        },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Sekolah Menengah Kejuruan"
+        },
+        "memberOf": {
+          "@type": "freelance",
+          "name": "arif-triana"
+        }
+      }
+    </script>
   </body>
 </html>

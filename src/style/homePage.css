@@ -1,0 +1,149 @@
+@media only screen and (min-width: 995px) {
+  .firstPage {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16%;
+    margin-bottom: 10%;
+  }
+
+  .image {
+    width: 50%;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+  }
+
+  .image .main-profile {
+    border: 1px solid whitesmoke;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+  }
+
+  .article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50vw;
+    gap: 20px;
+  }
+
+  .main-text {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .main-text .hi {
+    font-size: 2.5vw;
+  }
+  .main-text .intro {
+    font-size: 6vw;
+  }
+  .main-text .intro .name {
+    color: #4fb7da;
+  }
+
+  .main-text .tag {
+    font-size: 4vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: -20px;
+  }
+
+  .article {
+    font-size: 1.7vw;
+  }
+  .icons-hero {
+    display: flex;
+    width: 100%;
+    gap: 6%;
+  }
+
+  .icons-hero a {
+    color: #b3b1b1;
+    font-size: 1.7vw;
+    padding: 2.5%;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #4ea0d7, #472ac0);
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .firstPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30%;
+  }
+
+  .image {
+    display: block;
+    place-items: center;
+    padding: 0 0 20px 0;
+  }
+
+  .image .main-profile {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    background: #d9d9d9;
+  }
+
+  .article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vw;
+  }
+
+  .main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .main-text .hi {
+    font-size: 4vw;
+  }
+  .main-text .intro {
+    font-size: 10.8vw;
+  }
+  .main-text .intro .name {
+    color: #4fb7da;
+  }
+
+  .main-text .tag {
+    font-size: 7vw;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: -5px;
+  }
+
+  .article {
+    text-align: center;
+    font-size: 3.7vw;
+  }
+
+  .icons-hero {
+    display: flex;
+    width: 100%;
+    gap: 6%;
+    justify-content: center;
+  }
+
+  .icons-hero a {
+    color: #b3b1b1;
+    font-size: 3.7vw;
+    padding: 2.5%;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #4ea0d7, #472ac0);
+  }
+}

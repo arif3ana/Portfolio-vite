@@ -1,0 +1,316 @@
+@media only screen and (min-width: 995px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    padding: 15% 0 0 0;
+  }
+
+  .article-project-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.8vw;
+  }
+
+  .list-project {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    margin-top: 5%;
+    padding: 5% 0 5% 0;
+  }
+
+  .card-projects {
+    display: flex;
+    gap: 5%;
+    flex-direction: row;
+    padding: 2% 0 2% 0;
+  }
+
+  .card-projects:nth-child(4n + 1) {
+    flex-direction: row-reverse;
+  }
+
+  .card-image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-basis: 40%;
+  }
+
+  .card-image .img-box {
+    border-radius: 1.2vw;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 5px #4ea0d7, -2px -2px 5px #472ac0;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    flex-basis: 60%;
+    gap: 1vw;
+  }
+
+  .card-body .card-hero {
+    color: #4ea0d7;
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 2.5vw;
+    letter-spacing: 0.2vw;
+  }
+  .card-text {
+    font-size: 1.7vw;
+  }
+
+  .card-body .card-btn {
+    width: 9.9vw;
+    padding: 0 0;
+    margin: 0 0;
+    background-color: transparent;
+    border: none;
+    font-size: 1.7vw;
+    color: inherit;
+  }
+
+  .btn-view-project {
+    text-align: center;
+  }
+
+  .btn-view-project .btn-view {
+    padding: 10px 40px 10px 40px;
+    font-weight: 550;
+    font-size: 1.8vw;
+    letter-spacing: 2%;
+    text-decoration: none;
+    color: inherit;
+    background: linear-gradient(to left, #4ea0d7, #472ac0);
+    border-radius: 10px;
+    transition: 0.5s ease;
+  }
+
+  .btn-view-project .btn-view:hover {
+    background: linear-gradient(to right, #4ea0d7, #472ac0);
+  }
+
+  /* MODAL  */
+
+  .modal-content {
+    background: #171717;
+  }
+
+  .modal-title {
+    color: #4ea0d7;
+    font-size: 1.7vw;
+    font-weight: bold;
+    letter-spacing: 0.2vw;
+  }
+
+  .close {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    font-size: 1.7vw;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vw;
+    padding: 3%;
+  }
+
+  .modal-p {
+    font-size: 1.7vw;
+  }
+
+  .modal-article {
+    font-size: 1.7vw;
+    text-align: justify;
+  }
+
+  .modal-footer-a {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 50px;
+    border-top: 1px solid white;
+  }
+
+  .btn-show {
+    font-weight: bold;
+    font-size: 1.7vw;
+    text-decoration: none;
+    color: #4ea0d7;
+    transition: 0.3s;
+  }
+  .btn-show:hover {
+    color: #224c68;
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    margin-top: 15%;
+    padding: 20% 5% 0 5%;
+  }
+
+  .article-project-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 5vw;
+  }
+
+  .list-project {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    margin-top: 5%;
+    padding: 5% 0 5% 0;
+  }
+
+  .card-projects {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding: 5% 0 0 0;
+  }
+
+  .card-projects:nth-child(2n) {
+    flex-direction: row;
+  }
+
+  .card-image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .card-image .img-box {
+    border-radius: 1.2vw;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 5px #4ea0d7, -2px -2px 5px #472ac0;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+    gap: 1vw;
+  }
+
+  .card-body .card-hero {
+    color: #4ea0d7;
+    font-weight: 600;
+    letter-spacing: 0.2vw;
+    font-size: 3.5vw;
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 4.9vw;
+    letter-spacing: 0.2vw;
+  }
+  .card-text {
+    font-size: 3.7vw;
+  }
+
+  .card-body .card-btn {
+    width: 21.5vw;
+    padding: 0 0;
+    margin: 0 0;
+    background-color: transparent;
+    border: none;
+    font-size: 3.7vw;
+    color: inherit;
+  }
+
+  .btn-view-project {
+    text-align: center;
+  }
+
+  .btn-view-project .btn-view {
+    padding: 2% 5% 2% 5%;
+    border-radius: 2vw;
+    font-weight: 550;
+    font-size: 3.7vw;
+    letter-spacing: 2%;
+    text-decoration: none;
+    color: inherit;
+    background: linear-gradient(to left, #4ea0d7, #472ac0);
+    transition: 0.5s ease;
+  }
+
+  .btn-view-project .btn-view:hover {
+    background: linear-gradient(to right, #4ea0d7, #472ac0);
+  }
+
+  .modal-content {
+    background: #171717;
+  }
+
+  .modal-title {
+    color: #4ea0d7;
+    font-size: 3.7vw;
+    font-weight: bold;
+    letter-spacing: 0.2vw;
+  }
+
+  .close {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    font-size: 3.7;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    padding: 5%;
+  }
+
+  .modal-p {
+    font-size: 3.7vw;
+  }
+
+  .modal-article {
+    font-size: 3.7vw;
+    text-align: justify;
+  }
+
+  .modal-footer-a {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 20px;
+    border-top: 1px solid #e3e3e3;
+  }
+
+  .btn-show {
+    font-weight: bold;
+    font-size: 3.7vw;
+    text-decoration: none;
+    color: #4ea0d7;
+    transition: 0.3s;
+  }
+  .btn-show:hover {
+    color: #224c68;
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,119 @@
+@media only screen and (min-width: 995px) {
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding: 15% 0 0 0;
+  }
+
+  .service-title {
+    font-weight: bold;
+    font-size: 3.8vw;
+    text-align: center;
+  }
+
+  .service-content {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+  }
+
+  .service-body {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 20px #4ea0d7, -5px -5px 20px #472ac0;
+    background: #101630;
+    border-radius: 1.3vw;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    gap: 1vw;
+    width: 50%;
+  }
+
+  .service-body:nth-child(2n) {
+    box-shadow: -5px -5px 20px #472ac0, 5px 5px 20px #4ea0d7;
+  }
+
+  .service-body .title {
+    font-size: 2.5vw;
+    color: inherit;
+    font-weight: bold;
+  }
+
+  .service-body .description {
+    font-size: 1.7vw;
+    text-align: center;
+  }
+
+  .service-body img {
+    width: 10%;
+    height: 20%;
+    aspect-ratio: 4/4;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    padding: 20% 0 0 0;
+    margin-top: 15%;
+  }
+
+  .service-title {
+    font-weight: bold;
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .service-content {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vw;
+  }
+
+  .service-body {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 20px #4ea0d7, -5px -5px 20px #472ac0;
+    background: #101630;
+    border-radius: 1.3vw;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    gap: 1vw;
+    color: inherit;
+  }
+
+  .service-body:nth-child(2n) {
+    box-shadow: -5px -5px 20px #472ac0, 5px 5px 20px #4ea0d7;
+  }
+
+  .service-body .title {
+    font-size: 4.9vw;
+    color: inherit;
+    font-weight: bold;
+  }
+
+  .service-body .description {
+    font-size: 3.7vw;
+    text-align: center;
+  }
+
+  .service-body img {
+    width: 10%;
+    height: 20%;
+    aspect-ratio: 4/4;
+  }
+}
