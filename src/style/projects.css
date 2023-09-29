@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     gap: 5vw;
-    margin-top: 5%;
+    margin-top: 1%;
     padding: 5% 0 5% 0;
   }
 
@@ -169,14 +169,14 @@
   .article-project-title {
     text-align: center;
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 6vw;
   }
 
   .list-project {
     display: flex;
     flex-direction: column;
     gap: 5vw;
-    margin-top: 5%;
+    margin-top: 1%;
     padding: 5% 0 5% 0;
   }
 
@@ -216,25 +216,25 @@
     color: #4ea0d7;
     font-weight: 600;
     letter-spacing: 0.2vw;
-    font-size: 3.5vw;
+    font-size: 3.9vw;
   }
 
   .card-title {
     font-weight: 600;
-    font-size: 4.9vw;
+    font-size: 5.5vw;
     letter-spacing: 0.2vw;
   }
   .card-text {
-    font-size: 3.7vw;
+    font-size: 4vw;
   }
 
   .card-body .card-btn {
-    width: 21.5vw;
+    width: 23.8vw;
     padding: 0 0;
     margin: 0 0;
     background-color: transparent;
     border: none;
-    font-size: 3.7vw;
+    font-size: 4vw;
     color: inherit;
   }
 
@@ -246,7 +246,7 @@
     padding: 2% 5% 2% 5%;
     border-radius: 2vw;
     font-weight: 550;
-    font-size: 3.7vw;
+    font-size: 4vw;
     letter-spacing: 2%;
     text-decoration: none;
     color: inherit;

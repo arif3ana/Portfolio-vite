@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../assets/img/profile.webp";
+import profile from "../assets/img/arif-profile.webp";
 import SosialIcons from "./SosialIcons";
 export default function FirstPage({
   instagramClicked,
@@ -9,12 +9,14 @@ export default function FirstPage({
   return (
     <div className='container firstPage'>
       <div className='image'>
-        <img
-          src={profile}
-          alt='photo profile arif triana'
-          className='main-profile'
-          loading='lazy'
-        />
+        <div className='circle'>
+          <img
+            src={profile}
+            alt='photo profile arif triana'
+            className='main-profile'
+            loading='lazy'
+          />
+        </div>
       </div>
       <div className='article-content container'>
         <p className='main-text' data-aos='fade-up' data-aos-duration='3000'>

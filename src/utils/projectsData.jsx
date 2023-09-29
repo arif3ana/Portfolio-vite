@@ -21,11 +21,10 @@ const projectData = [
 
 const reviewer = [
   {
-    id: 1,
-    name: "Ahmad sudarman",
-    position: "CEO of PT.Ahmad Jaya Abadi",
-    content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis architecto minus, non nostrum earum itaque eveniet. Similique necessitatibus in illo.",
+    id: "",
+    name: "",
+    position: "",
+    content: "",
     image: "",
   },
 ];

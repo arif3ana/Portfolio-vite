@@ -45,7 +45,7 @@
   }
 
   .footer-slogan {
-    font-size: 3.7vw;
+    font-size: 4vw;
     text-align: center;
   }
 
@@ -59,14 +59,14 @@
 
   .icons-footer a {
     color: #b3b1b1;
-    font-size: 3.7vw;
+    font-size: 4vw;
     padding: 2.5%;
     border-radius: 1.2vw;
     background: linear-gradient(to bottom, #4ea0d7, #472ac0);
   }
 
   .text-footer {
-    font-size: 3.7vw;
+    font-size: 4vw;
     letter-spacing: 4%;
     width: 100%;
     text-align: center;

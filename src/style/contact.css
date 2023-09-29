@@ -138,12 +138,12 @@
 
   .contact h3 {
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 6vw;
   }
 
   .title-contact {
     font-weight: bold;
-    font-size: 4.9vw;
+    font-size: 5.3vw;
     letter-spacing: 0.2vw;
     color: #4ea0d7;
   }
@@ -158,7 +158,7 @@
   .article-contact,
   .main-contact {
     text-align: left;
-    font-size: 3.7vw;
+    font-size: 4vw;
   }
 
   .icon-contact {
@@ -217,7 +217,7 @@
     color: inherit;
     height: 7.9vw;
     padding: 3%;
-    font-size: 3.7vw;
+    font-size: 4vw;
   }
 
   .form-message .form-input.area {
@@ -225,7 +225,7 @@
   }
 
   .form-input::placeholder {
-    font-size: 3.7vw;
+    font-size: 4vw;
   }
 
   .form-botton {
@@ -236,7 +236,7 @@
   .form-botton .btn-send {
     padding: 1.8vw 3.7vw 1.8vw 3.7vw;
     border-radius: 1.2vw;
-    font-size: 3.7vw;
+    font-size: 4vw;
     border: none;
     background-color: #101630;
     transition: 0.5s;

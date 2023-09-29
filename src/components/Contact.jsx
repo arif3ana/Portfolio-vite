@@ -1,10 +1,18 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "./Button";
+import validator from "validator";
 export default function Contact({ emailClick, waClick }) {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const validatedEmail = validator.isEmail(form.current[1].value);
+    if (validatedEmail == false) {
+      alert("Failed to Send Email message.\n Your email is invalid");
+      return false;
+    }
+
     emailjs
       .sendForm(
         import.meta.env.VITE_APP_SERVICE_ID,
@@ -16,7 +24,7 @@ export default function Contact({ emailClick, waClick }) {
         (result) => {
           console.log(result.text);
           alert(
-            "Your message has been sent to Arif\n Thank you for your email. I really appreciate it."
+            `${result.text}. Your message has been sent to Arif\n Thank you for your email. I really appreciate it.`
           );
         },
         (error) => {
@@ -81,6 +89,7 @@ export default function Contact({ emailClick, waClick }) {
             <div className='mb-2'>
               <input
                 type='email'
+                id='email'
                 className='form-input'
                 name='user_email'
                 placeholder='Email'

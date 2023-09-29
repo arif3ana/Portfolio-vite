@@ -181,7 +181,7 @@
     margin-top: -5vw;
   }
   .side-content .content-about-article {
-    font-size: 3.7vw;
+    font-size: 4vw;
   }
 
   .icons-show-about {
@@ -196,7 +196,7 @@
 
   .icons-show-about a {
     color: #b3b1b1;
-    font-size: 3.7vw;
+    font-size: 4vw;
     padding: 2.5% 5%;
     border-radius: 1.2vw;
     background: linear-gradient(to bottom, #4ea0d7, #472ac0);
@@ -205,6 +205,6 @@
   .show-about-article .main-content {
     flex-basis: 120vw;
     padding: 5vw 0 0 0;
-    font-size: 3.7vw;
+    font-size: 4vw;
   }
 }

@@ -17,8 +17,8 @@
 
   .image .main-profile {
     border: 1px solid whitesmoke;
-    width: 30vw;
-    height: 30vw;
+    width: 100%;
+    aspect-ratio: 8 / 8;
     border-radius: 50%;
   }
 
@@ -83,13 +83,13 @@
 
   .image {
     display: block;
-    place-items: center;
+    text-align: center;
     padding: 0 0 20px 0;
   }
 
   .image .main-profile {
-    width: 25vw;
-    height: 25vw;
+    width: 50%;
+    aspect-ratio: 2 / 2;
     border-radius: 50%;
     border: 1px solid whitesmoke;
     background: #d9d9d9;
@@ -129,7 +129,7 @@
 
   .article {
     text-align: center;
-    font-size: 3.7vw;
+    font-size: 4vw;
   }
 
   .icons-hero {
