@@ -142,7 +142,7 @@
   .icons-hero a {
     color: #b3b1b1;
     font-size: 4.7vw;
-    padding: 3%;
+    padding: 10px;
     border-radius: 2vw;
     background: linear-gradient(to bottom, #4ea0d7, #472ac0);
   }
