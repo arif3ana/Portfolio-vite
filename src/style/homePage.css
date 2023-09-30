@@ -111,17 +111,17 @@
   }
 
   .main-text .hi {
-    font-size: 4vw;
+    font-size: 6.2vw;
   }
   .main-text .intro {
-    font-size: 10.8vw;
+    font-size: 13.5vw;
   }
   .main-text .intro .name {
     color: #4fb7da;
   }
 
   .main-text .tag {
-    font-size: 7vw;
+    font-size: 8vw;
     font-weight: bold;
     letter-spacing: 1px;
     margin-top: -5px;
@@ -141,8 +141,8 @@
 
   .icons-hero a {
     color: #b3b1b1;
-    font-size: 3.7vw;
-    padding: 2.5%;
+    font-size: 4.7vw;
+    padding: 3%;
     border-radius: 50%;
     background: linear-gradient(to bottom, #4ea0d7, #472ac0);
   }
