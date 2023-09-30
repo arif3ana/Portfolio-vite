@@ -5,7 +5,7 @@ import js from "../assets/img/js.webp";
 import php from "../assets/img/php.webp";
 import react from "../assets/img/React.webp";
 import laravel from "../assets/img/laravel.webp";
-import Resume from "../assets/Arif Triana-Resume.pdf";
+import Resume from "../assets/Arif triana Resume.pdf";
 import { Link } from "react-router-dom";
 export default function About() {
   const who = (
