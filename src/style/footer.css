@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@media only screen and (max-width: 995px) {
+  footer {
+    background: linear-gradient(
+      to left,
+      rgba(79, 148, 215, 0.7),
+      rgba(73, 55, 194, 0.7)
+    );
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 10vw 10vw 0 0;
+  }
+
+  .content-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .content-footer hr {
+    border: 0.8vw solid #212121;
+    border-radius: 5px;
+    box-shadow: -5px -5px 10px #4ea0d7, -5px -5px 20px #472ac0;
+    width: 100%;
+  }
+
+  .footer-main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 6vw 0 0 0;
+    gap: 1.5vw;
+  }
+
+  .footer-title {
+    font-size: 6vw;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+    color: inherit;
+    text-align: center;
+  }
+
+  .footer-slogan {
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .icons-footer {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons-footer a {
+    color: #b3b1b1;
+    font-size: 4vw;
+    padding: 2.5%;
+    border-radius: 1.2vw;
+    background: linear-gradient(to bottom, #4ea0d7, #472ac0);
+  }
+
+  .text-footer {
+    font-size: 4vw;
+    letter-spacing: 4%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 995px) {
+  footer {
+    background: linear-gradient(
+      to left,
+      rgba(79, 148, 215, 0.7),
+      rgba(73, 55, 194, 0.7)
+    );
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    border-radius: 10vw 10vw 0 0;
+  }
+
+  .content-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .content-footer hr {
+    border: 5px solid #212121;
+    border-radius: 5px;
+    box-shadow: -5px -5px 10px #4ea0d7, -5px -5px 20px #472ac0;
+    width: 100%;
+  }
+
+  .footer-main-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1.5vw 0 0 0;
+  }
+
+  .footer-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 4.2vw;
+    letter-spacing: 2px;
+    color: inherit;
+  }
+
+  .footer-slogan {
+    font-size: 1.7vw;
+  }
+
+  .icons-footer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 5%;
+  }
+
+  .icons-footer a {
+    color: #b3b1b1;
+    font-size: 1.7vw;
+    padding: 2.5%;
+    border-radius: 1.2vw;
+    background: linear-gradient(to bottom, #4ea0d7, #472ac0);
+  }
+
+  .text-footer {
+    font-size: 1.7vw;
+    letter-spacing: 4%;
+    width: 100%;
+    text-align: center;
+  }
+}
