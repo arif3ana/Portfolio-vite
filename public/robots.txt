@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Sitemap: https://arifworks.vercel.app/
+Sitemap: https://ariftriana.vercel.app/
