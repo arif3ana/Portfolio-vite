@@ -181,14 +181,15 @@
   }
 
   .contact-tools a {
-    font-size: 5vw;
-    border-radius: 1.2vw;
-    width: 13%;
-    padding: 1%;
+    font-size: 5.5vw;
+    border-radius: 3vw;
+    /* width: 13%; */
+    padding: 2vw 3.5vw;
     background: linear-gradient(to bottom, #4ea0d7, #472ac0);
     box-shadow: -2px -4px 12px #4ea0d7;
     text-align: center;
     justify-content: center;
+    align-items: center;
     transition: 0.5s;
   }
 
