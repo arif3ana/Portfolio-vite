@@ -235,9 +235,10 @@
   }
 
   .form-botton .btn-send {
-    padding: 1.8vw 3.7vw 1.8vw 3.7vw;
-    border-radius: 1.2vw;
-    font-size: 4vw;
+    padding: 1.8vw 4vw;
+    width: 20vw;
+    border-radius: 3vw;
+    font-size: 5.5vw;
     border: none;
     background-color: #101630;
     transition: 0.5s;
