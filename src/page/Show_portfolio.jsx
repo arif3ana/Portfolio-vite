@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BottonBack from "../components/BottonBack";
 import Card from "../components/Card";
 import Modal from "../components/Modal";
@@ -14,6 +14,7 @@ function Show_portfolio() {
       title: "Portfolio Page",
     });
   }, []);
+
   return (
     <>
       <header>
@@ -26,10 +27,10 @@ function Show_portfolio() {
             Experience I share: A look at the best results of my recent projects
           </p>
           <div className='list-portfolio'>
-            {projectData.map((proyek, index) => (
+            {projectData.reverse().map((proyek, index) => (
               <Fragment key={`${proyek.id}-${index}`}>
                 <Card
-                  id={proyek.id}
+                  id={index}
                   classContainer={"projects"}
                   image={proyek.image}
                   classImage={"img-box"}

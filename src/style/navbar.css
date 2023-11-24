@@ -29,7 +29,7 @@
 
   .navbar-nav .navigate {
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1.7vw;
     display: flex;
     align-items: center;
     text-align: center;
@@ -73,7 +73,7 @@
     background-color: #101630;
   }
   .offcanvas .offcanvas-title {
-    font-size: 7vw;
+    font-size: 8vw;
     font-family: "Poppins", sans-serif;
     color: #4fb7da;
   }
@@ -81,6 +81,6 @@
   .offcanvas-body .nav-item .nav-link {
     color: inherit;
     font-weight: bold;
-    font-size: 3.7vw;
+    font-size: 4.5vw;
   }
 }

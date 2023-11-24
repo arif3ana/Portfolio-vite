@@ -4,12 +4,13 @@ import design from "../assets/img/design.png";
 export default function Service() {
   return (
     <div className='service container'>
-      <h3 className='service-title'>SERVICES</h3>
+      <h3 className='service-title' data-aos='fade-up'
+          data-aos-duration='500'>SERVICES</h3>
       <div className='service-content container'>
         <div
           className='service-body'
           data-aos='fade-up'
-          data-aos-duration='1200'>
+          data-aos-duration='1000'>
           <img src={developer} alt='developer icon' loading='lazy' />
           <p className='title'>Web Developer</p>
           <p className='description'>
@@ -20,7 +21,7 @@ export default function Service() {
         <div
           className='service-body'
           data-aos='fade-up'
-          data-aos-duration='1700'>
+          data-aos-duration='1500'>
           <img src={design} alt='web design icon ' loading='lazy' />
           <p className='title'>Web Design</p>
           <p className='description'>

@@ -61,20 +61,20 @@
 
   .card-title {
     font-weight: 600;
-    font-size: 2.5vw;
+    font-size: 3vw;
     letter-spacing: 0.2vw;
   }
   .card-text {
-    font-size: 1.7vw;
+    font-size: 2vw;
   }
 
   .card-body .card-btn {
-    width: 9.9vw;
+    width: max-content;
     padding: 0 0;
     margin: 0 0;
     background-color: transparent;
     border: none;
-    font-size: 1.7vw;
+    font-size: 2vw;
     color: inherit;
   }
 
@@ -85,7 +85,7 @@
   .btn-view-project .btn-view {
     padding: 10px 40px 10px 40px;
     font-weight: 550;
-    font-size: 1.8vw;
+    font-size: 2vw;
     letter-spacing: 2%;
     text-decoration: none;
     color: inherit;
@@ -101,12 +101,12 @@
   /* MODAL  */
 
   .modal-content {
-    background: #171717;
+    background: #101630;
   }
 
   .modal-title {
     color: #4ea0d7;
-    font-size: 1.7vw;
+    font-size: 3vw;
     font-weight: bold;
     letter-spacing: 0.2vw;
   }
@@ -115,7 +115,7 @@
     background-color: transparent;
     color: inherit;
     border: none;
-    font-size: 1.7vw;
+    font-size: 2.5vw;
     border-radius: 50%;
     transition: 0.3s;
   }
@@ -129,11 +129,11 @@
   }
 
   .modal-p {
-    font-size: 1.7vw;
+    font-size: 2vw;
   }
 
   .modal-article {
-    font-size: 1.7vw;
+    font-size: 2vw;
     text-align: justify;
   }
 
@@ -146,7 +146,7 @@
 
   .btn-show {
     font-weight: bold;
-    font-size: 1.7vw;
+    font-size: 2vw;
     text-decoration: none;
     color: #4ea0d7;
     transition: 0.3s;
@@ -169,7 +169,7 @@
   .article-project-title {
     text-align: center;
     font-weight: bold;
-    font-size: 6vw;
+    font-size: 7vw;
   }
 
   .list-project {
@@ -221,20 +221,20 @@
 
   .card-title {
     font-weight: 600;
-    font-size: 5.5vw;
+    font-size: 6vw;
     letter-spacing: 0.2vw;
   }
   .card-text {
-    font-size: 4vw;
+    font-size: 4.5vw;
   }
 
   .card-body .card-btn {
-    width: 23.8vw;
+    width: max-content;
     padding: 0 0;
     margin: 0 0;
     background-color: transparent;
     border: none;
-    font-size: 4vw;
+    font-size: 4.5vw;
     color: inherit;
   }
 
@@ -246,7 +246,7 @@
     padding: 2% 5% 2% 5%;
     border-radius: 2vw;
     font-weight: 550;
-    font-size: 4vw;
+    font-size: 4.5vw;
     letter-spacing: 2%;
     text-decoration: none;
     color: inherit;
@@ -259,12 +259,12 @@
   }
 
   .modal-content {
-    background: #171717;
+    background: #101630;
   }
 
   .modal-title {
     color: #4ea0d7;
-    font-size: 3.7vw;
+    font-size: 4vw;
     font-weight: bold;
     letter-spacing: 0.2vw;
   }
@@ -273,7 +273,7 @@
     background-color: transparent;
     color: inherit;
     border: none;
-    font-size: 3.7;
+    font-size: 6vw;
     border-radius: 50%;
     transition: 0.3s;
   }
@@ -287,11 +287,11 @@
   }
 
   .modal-p {
-    font-size: 3.7vw;
+    font-size: 4.5vw;
   }
 
   .modal-article {
-    font-size: 3.7vw;
+    font-size: 4.5vw;
     text-align: justify;
   }
 
@@ -304,7 +304,7 @@
 
   .btn-show {
     font-weight: bold;
-    font-size: 3.7vw;
+    font-size: 4.3vw;
     text-decoration: none;
     color: #4ea0d7;
     transition: 0.3s;

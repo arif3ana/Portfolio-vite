@@ -37,21 +37,18 @@ export default function Contact({ emailClick, waClick }) {
   };
   return (
     <div className='contact container'>
-      <h3>CONTACT</h3>
+      <h3 data-aos='fade-up' data-aos-duration='500'>CONTACT</h3>
       <div className='contact-content'>
         <div className='article-contact'>
-          <p className='title-contact'>Lets talk</p>
-          <p>
-            If you are interested in working with us, or if you have any
-            questions about the project you would like to work on, please don't
-            hesitate to to contact me.
+          <p className='title-contact' data-aos='fade-up' data-aos-duration='500'>Lets talk</p>
+          <p data-aos='fade-up' data-aos-duration='500'>
+            If you are interested in collaborating with us or have any questions about a project you would like to undertake, please feel free to contact me. 
           </p>
-          <p>
-            I'd love to learn more about about your project and provide a
-            solution that fits your needs.
+          <p data-aos='fade-up' data-aos-duration='700'>
+            I would love to learn more about your project and provide a tailored solution that meets your needs.
           </p>
           <div className='icon-contact'>
-            <div className='contact-tools'>
+            <div className='contact-tools' data-aos='fade-up' data-aos-duration='500'>
               <a
                 href='mailto:arif.3ana@gmail.com'
                 target='_blank'
@@ -62,7 +59,7 @@ export default function Contact({ emailClick, waClick }) {
                 Email <br /> arif.3ana@gmail.com
               </p>
             </div>
-            <div className='contact-tools'>
+            <div className='contact-tools' data-aos='fade-up' data-aos-duration='700'>
               <a
                 href='https://api.whatsapp.com/send?phone=6285703020296'
                 target='_blank'
@@ -77,7 +74,7 @@ export default function Contact({ emailClick, waClick }) {
         </div>
         <div className='main-contact'>
           <form className='form-message' ref={form} onSubmit={sendEmail}>
-            <div className='mb-2'>
+            <div className='mb-2' data-aos='fade-up' data-aos-duration='500'>
               <input
                 type='text'
                 className='form-input'
@@ -86,7 +83,7 @@ export default function Contact({ emailClick, waClick }) {
                 required
               />
             </div>
-            <div className='mb-2'>
+            <div className='mb-2' data-aos='fade-up' data-aos-duration='500'>
               <input
                 type='email'
                 id='email'
@@ -96,7 +93,7 @@ export default function Contact({ emailClick, waClick }) {
                 required
               />
             </div>
-            <div>
+            <div data-aos='fade-up' data-aos-duration='500'>
               <textarea
                 type='text'
                 className='form-input area'
@@ -105,7 +102,7 @@ export default function Contact({ emailClick, waClick }) {
                 required
                 rows='3'></textarea>
             </div>
-            <div className='form-botton'>
+            <div className='form-botton' data-aos='zoom-in-up'>
               <Button
                 type={"submit"}
                 className={"btn-send"}

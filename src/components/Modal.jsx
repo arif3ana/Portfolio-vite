@@ -11,7 +11,7 @@ export default function Modal({ data, index }) {
         <div
           key={data.id - index}
           className='modal fade'
-          id={`detailProject-${data.id}`}
+          id={`detailProject-${index}`}
           tabIndex='-1'
           aria-labelledby='exampleModalLabel'
           aria-hidden='true'>
@@ -51,7 +51,7 @@ export default function Modal({ data, index }) {
       <div
         key={data.id}
         className='modal fade'
-        id={`detailProject-${data.id}`}
+        id={`detailProject-${index}`}
         tabIndex='-1'
         aria-labelledby='exampleModalLabel'
         aria-hidden='true'>

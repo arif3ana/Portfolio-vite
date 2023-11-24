@@ -53,15 +53,11 @@ export default function About() {
   };
 
   return (
-    <div
-      className='about container'
-      data-aos='fade-up'
-      data-aos-duration='1300'
-      data-aos-anchor-placement='top-center'>
-      <h3 className='article-title'>ABOUT ME</h3>
+    <div className='about container'>
+      <h3 className='article-title' data-aos='fade-up' data-aos-duration='500'>ABOUT ME</h3>
       <div className='about-content'>
         <ul className='nav nav-about'>
-          <li className='nav-item'>
+          <li className='nav-item' data-aos='fade-up' data-aos-duration='500'>
             <button
               className=' about-list'
               id='btn-who'
@@ -69,7 +65,7 @@ export default function About() {
               Who i am
             </button>
           </li>
-          <li className='nav-item'>
+          <li className='nav-item' data-aos='fade-up' data-aos-duration='1000'>
             <button
               className=' about-list'
               id='btn-what'
@@ -78,14 +74,15 @@ export default function About() {
             </button>
           </li>
         </ul>
-        <div className='nav-content'>{isParagraf}</div>
+        <div className='nav-content' data-aos='fade-up' data-aos-duration='1000'>{isParagraf}</div>
       </div>
 
       <div className='section-button'>
-        <a className='btn-hire' href='#contact'>
+        <a className='btn-hire' href='#contact' data-aos='fade-up'
+            data-aos-duration='500'>
           HIRE ME
         </a>
-        <a href={Resume} download className='btn-resume'>
+        <a href={Resume} download className='btn-resume' data-aos='fade-up' data-aos-duration='1000'>
           RESUME
         </a>
       </div>

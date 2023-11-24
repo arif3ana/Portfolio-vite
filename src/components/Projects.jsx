@@ -8,24 +8,24 @@ export default function Projects() {
   const limitData = projectData.slice(0, 3);
   return (
     <div className='projects container'>
-      <h3 className='article-project-title'>PORTFOLIO</h3>
+      <h3 className='article-project-title' data-aos='fade-up' data-aos-duration='500'>PORTFOLIO</h3>
       <div className='list-project'>
-        {limitData.map((proyek, index) => (
+        {limitData.reverse().map((proyek, index) => (
           <Fragment key={`${proyek.id}-${index}`}>
             <Card
-              id={proyek.id}
+              id={index}
               classContainer={"projects"}
               image={proyek.image}
               classImage={"img-box"}
               classBotton={"card-btn"}
               title={proyek.title}
-              content={proyek.description.split(" ").slice(0, 49).join(" ")}
+              content={proyek.description.split(" ").slice(0, 38).join(" ")}
             />
             <Modal data={proyek} index={index} />
           </Fragment>
         ))}
       </div>
-      <div className='btn-view-project'>
+      <div className='btn-view-project' data-aos='zoom-in-up'>
         <Link to='/show-portfolio' className='btn-view'>
           View all
         </Link>

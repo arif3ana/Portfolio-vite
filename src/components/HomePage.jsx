@@ -19,7 +19,7 @@ export default function FirstPage({
         </div>
       </div>
       <div className='article-content container'>
-        <p className='main-text' data-aos='fade-up' data-aos-duration='3000'>
+        <p className='main-text' data-aos='fade-up' data-aos-duration='1500'>
           <span className='hi'>Hello</span>
           <span className='intro'>
             I'm <strong className='name'>Arif triana</strong>

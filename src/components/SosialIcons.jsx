@@ -33,7 +33,7 @@ function SosialIcons({
             onClick={linkedlinClicked}
             href='https://linkedin.com/in/arif-triana-48bb74254'
             data-aos='fade-left'
-            data-aos-duration='2000'
+            data-aos-duration='1500'
             target='_blank'>
             <i className='bi bi-linkedin' />
           </a>
@@ -41,7 +41,7 @@ function SosialIcons({
             onClick={githubClicked}
             href='https://github.com/arif3ana'
             data-aos='fade-left'
-            data-aos-duration='3000'
+            data-aos-duration='2000'
             target='_blank'>
             <i className='bi bi-github' />
           </a>
