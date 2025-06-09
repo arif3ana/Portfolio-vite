@@ -1,37 +1,59 @@
-import React from "react";
-
-function Card({
-  classContainer,
-  image,
-  classImage,
-  title,
-  content,
-  classBotton,
-  id,
-}) {
+function Card({ image, title, content, id }) {
   return (
-    <div className={`card-${classContainer}`}>
-      <div className='card-image' data-aos='zoom-in-up'>
-        <img
-          src={image}
-          className={`card-img ${classImage}`}
-          alt={`© ${new Date().getFullYear()} created by Arif Triana`}
-          loading='lezy'
+    <div
+      className={`flex ${
+        id % 2 == 0 ? "flex-row-reverse" : "flex-row"
+      } gap-[40px]`}
+    >
+      <div className="relative w-[45%] min-h-[380px]">
+        {/* Layer belakang dengan border */}
+        <div
+          className={`absolute ${
+            id % 2 == 0 ? "top-[-7%] left-[5%]" : "bottom-[-7%] left-[-5%]"
+          }  w-full h-full border-[5px] border-cyan-400 rounded-xl z-0`}
         />
+
+        {/* Layer depan (gambar) */}
+        <div className="relative w-full h-full bg-gray-300 rounded-xl overflow-hidden z-10">
+          <img
+            src={image}
+            alt={`© ${new Date().getFullYear()} created by Arif Triana`}
+            loading="lazy"
+            className={`object-cover w-full h-full`}
+          />
+        </div>
       </div>
-      <div className='card-body'>
-        <h5 className='card-hero' data-aos='fade-up' data-aos-duration='500'>PROJECT {id + 1}</h5>
-        <h5 className='card-title' data-aos='fade-up' data-aos-duration='1000'>{title}</h5>
-        <p className='card-text' data-aos='fade-up' data-aos-duration='1500'>{content}</p>
-        <button
-          data-aos='zoom-in-up'
-          className={classBotton}
-          data-bs-toggle='modal'
-          data-bs-target={`#detailProject-${id}`}>
-          <strong>
-            <i className='bi bi-arrow-right' /> Read More
-          </strong>
-        </button>
+      <div className="card-body flex flex-col justify-between w-[55%]">
+        <div className="flex flex-col gap-[20px]">
+          <div>
+            <h5 className="card-hero text-display3 text-s1">
+              PROJECT {id + 1}
+            </h5>
+            <h5 className="card-title text-display2 font-bold">{title}</h5>
+          </div>
+          <p className="card-text text-heading1">{content}</p>
+        </div>
+        <div>
+          <button className="group relative text-heading1 tracking-[2px] flex justify-center items-center gap-[10px] cursor-pointer">
+            Preview
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.95911 13.125L13.2091 1.875M13.2091 1.875H1.95911M13.2091 1.875V13.125"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span className="absolute bottom-0 left-0 w-full h-[1px] bg-s1 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-import React from "react";
 import SosialIcons from "./SosialIcons";
 export default function Footer({
   instagramClicked,
@@ -6,26 +5,19 @@ export default function Footer({
   githubClicked,
 }) {
   return (
-    <div className='content-footer container'>
-      <div className='footer-main-content'>
-        <div>
-          <h3 className='footer-title' data-aos='zoom-in-up'
-            data-aos-duration='500'>Arif</h3>
-          <p className='footer-slogan' data-aos='zoom-in-up'
-            data-aos-duration='700'>
-          I want to help your company succeed online and bring your ideas to life digitally.
-          </p>
-        </div>
+    <div className="flex flex-col gap-[20px] mt-[100px] mb-[50px]">
+      <div className="flex justify-between items-center gap-[20px]">
+        <h3 className="text-display1 text-s1 font-bold">AT</h3>
         <SosialIcons
-          className={"footer"}
           instagramClicked={instagramClicked}
           linkedlinClicked={linkedlinClicked}
           githubClicked={githubClicked}
-          active={false}
         />
       </div>
-      <hr />
-      <p className='text-footer'>
+
+      <hr className="border-[4px] border-[#212121] rounded-[5px] shadow-[-4px_-4px_10px_rgba(0,0,0,0.66)] mt-[20px]" />
+
+      <p className="text-heading2 font-regular text-center">
         © {new Date().getFullYear()} Arif Triana. Created By Arif Triana
       </p>
       {/* All Rights Reserved. */}

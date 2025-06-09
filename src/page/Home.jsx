@@ -1,15 +1,16 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Navbar from "../components/navbar";
 import HomePage from "../components/HomePage";
 import About from "../components/About";
-import Service from "../components/Service";
 import Projects from "../components/Projects";
 import Review from "../components/Review";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import ReactGA from "react-ga4";
 import { reviewer } from "../utils/projectsData";
+import Particle from "../components/Particle";
 function Home() {
+  const particles = Array.from({ length: 12 })
   useEffect(() => {
     ReactGA.send({
       hitType: "pageview",
@@ -69,14 +70,13 @@ function Home() {
         />
       </section>
       <main>
-        <article id='about'>
+        <article id="about">
           <About />
         </article>
-        <article id='projects'>
+        <article id="projects">
           <Projects />
         </article>
-        <article id='service'>
-          <Service />
+        <article id="portfolio">
           {reviewer.map((review) => {
             if (!review.name || !review.content) {
               return null;
@@ -92,10 +92,17 @@ function Home() {
             );
           })}
         </article>
-        <article id='contact'>
+        <article id="contact">
           <Contact emailClick={handleEmailClick} waClick={handleWaClick} />
         </article>
       </main>
+
+      {/* circler particle */}
+      {/* <div className="w-[100px] h-[100px] bg-[#1A213B] opacity-[80%] rounded-[50%] blur-[10px] absolute top-0 left-0 right-0 bottom-0"></div> */}
+      {particles.map((_, i) => (
+        <Particle key={i} />
+      ))}
+
       <footer>
         <Footer
           linkedlinClicked={handleLinkedlin}

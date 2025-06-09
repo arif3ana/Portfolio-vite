@@ -1,31 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-/* @import "./style/navbar.css";
-@import "./style/homePage.css";
-@import "./style/about.css";
-@import "./style/service.css";
-@import "./style/projects.css";
-@import "./style/review.css";
-@import "./style/contact.css";
-@import "./style/footer.css";
-@import "./style/showAbout.css";
-@import "./style/showPortfolio.css"; */
-
-/* * {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "PT Sans", sans-serif;
-  color: #e1e4edd7;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
+@import url("https://fonts.googleapis.com/css2?family=family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss" important;
+@config "../tailwind.config.js";
 
 * {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  color: #e1e4edd7;
+  color: #fff;
   /* background: #101630; */
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -33,10 +15,31 @@
   -webkit-text-size-adjust: 100%;
 }
 
-#about {
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #101630;
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    padding: 0 25px;
+  }
+}
+
+/* #about {
   padding-top: 62px;
 }
 
 #Projects {
   padding-top: 22px;
-}
+} */

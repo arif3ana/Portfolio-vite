@@ -1,5 +1,3 @@
-import React from "react";
-import profile from "../assets/img/arif-profile.webp";
 import SosialIcons from "./SosialIcons";
 export default function FirstPage({
   instagramClicked,
@@ -7,29 +5,14 @@ export default function FirstPage({
   githubClicked,
 }) {
   return (
-    <div className='container firstPage'>
-      <div className='image'>
-        <div className='circle'>
-          <img
-            src={profile}
-            alt='photo profile arif triana'
-            className='main-profile'
-            loading='lazy'
-          />
+    <div className="min-h-[100dvh] flex flex-col justify-center">
+      <div className="flex flex-col gap-[46px]">
+        <div>
+          <p className="text-display3 bg-transparent text-[#888a97]">Hallo I'm</p>
+          <h1 className="text-[98px]/[87px] font-secondary font-bold">
+            FULL STACK <br /> WEB DEVELOPER
+          </h1>
         </div>
-      </div>
-      <div className='article-content container'>
-        <p className='main-text' data-aos='fade-up' data-aos-duration='1500'>
-          <span className='hi'>Hello</span>
-          <span className='intro'>
-            I'm <strong className='name'>Arif triana</strong>
-          </span>
-          <span className='tag'>Web Developer</span>
-        </p>
-        <p className='article' data-aos='fade-up' data-aos-duration='1000'>
-          I create attractive and functional websites for your business, that
-          providing a great digital experience.
-        </p>
         <SosialIcons
           className={"hero"}
           githubClicked={githubClicked}
