@@ -19,7 +19,7 @@ const Particle = () => {
 
   return (
     <div
-      className="bg-[#1A213B] rounded-full absolute opacity-[80%] blur-[10px] z-[-1]"
+      className="bg-[#1A213B] rounded-full absolute opacity-[80%] blur-[10px]"
       style={style}
     />
   );

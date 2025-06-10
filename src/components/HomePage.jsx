@@ -6,10 +6,10 @@ export default function FirstPage({
 }) {
   return (
     <div className="min-h-[100dvh] flex flex-col justify-center">
-      <div className="flex flex-col gap-[46px]">
+      <div className="flex flex-col xs:gap-[32px] md:gap-[46px]">
         <div>
-          <p className="text-display3 bg-transparent text-[#888a97]">Hallo I'm</p>
-          <h1 className="text-[98px]/[87px] font-secondary font-bold">
+          <p className="xs:text-heading2 xs:text-center md:text-heading1 md:text-left 2xl:text-display3 bg-transparent text-[#888a97] font-bold">Hallo I'm</p>
+          <h1 className="xs:text-[38px]/[38px] xs:text-center md:text-[72px]/[70px] 2xl:text-[98px]/[87px] md:text-left font-secondary font-bold">
             FULL STACK <br /> WEB DEVELOPER
           </h1>
         </div>

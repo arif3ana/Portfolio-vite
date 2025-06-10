@@ -10,7 +10,7 @@ import ReactGA from "react-ga4";
 import { reviewer } from "../utils/projectsData";
 import Particle from "../components/Particle";
 function Home() {
-  const particles = Array.from({ length: 12 })
+  const particles = Array.from({ length: 12 });
   useEffect(() => {
     ReactGA.send({
       hitType: "pageview",
@@ -98,10 +98,11 @@ function Home() {
       </main>
 
       {/* circler particle */}
-      {/* <div className="w-[100px] h-[100px] bg-[#1A213B] opacity-[80%] rounded-[50%] blur-[10px] absolute top-0 left-0 right-0 bottom-0"></div> */}
-      {particles.map((_, i) => (
-        <Particle key={i} />
-      ))}
+      <div className="absolute inset-0 overflow-hidden z-[-1]">
+        {particles.map((_, i) => (
+          <Particle key={i} />
+        ))}
+      </div>
 
       <footer>
         <Footer

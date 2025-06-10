@@ -32,15 +32,14 @@ export default function Contact({ emailClick, waClick }) {
   //   e.target.reset();
   // };
   return (
-    <div className="mt-[200px] mb-[200px] bg-[linear-gradient(to_bottom,#4ea0d7,#472ac0)] rounded-[20px] p-[40px] grid grid-cols-6 gap-[20px]">
-      <div className="flex flex-col gap-[40px] col-span-2">
-        <h3 className="text-[63px]/[63px] font-bold">
+    <div className="mt-[200px] mb-[200px] bg-[linear-gradient(to_bottom,#4ea0d7,#472ac0)] rounded-[20px] p-[40px] grid xs:grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-x-[20px] gap-y-[40px]">
+      <div className="flex flex-col gap-[30px] md:col-span-2 xl:col-span-2">
+        <h3 className="xs:text-display2/[50px] md:text-display1/[56px] xl:text-[63px]/[63px] font-bold">
           Let’s Work <br /> Together
         </h3>
         <div className="flex gap-[40px]">
-          <div className="contact-tools" data-aos="fade-up">
+          <div className="rounded-[20px] text-center xs:w-[60px] xs:h-[60px] xs:text-heading1 lg:w-[70px] lg:h-[70px] lg:text-display4 2xl:w-[80px] 2xl:h-[80px] 2xl:text-display3 flex items-center justify-center bg-[linear-gradient(to_top,#4ea0d7,#472ac0)] shadow-[-2px_4px_12px_#4ea0d7] transition-all ease-in hover:shadow-[-2px_-2px_10px_#472ac0]">
             <a
-              className="text-display3 rounded-[20px] text-center p-[20px] bg-[linear-gradient(to_top,#4ea0d7,#472ac0)] shadow-[-2px_4px_12px_#4ea0d7] transition-all ease-in hover:shadow-[-2px_-2px_10px_#472ac0]"
               href="mailto:arif.3ana@gmail.com"
               target="_blank"
               onClick={emailClick}
@@ -48,9 +47,8 @@ export default function Contact({ emailClick, waClick }) {
               <i className="bi bi-envelope-at-fill" />
             </a>
           </div>
-          <div className="contact-tools">
+          <div className="rounded-[20px] text-center xs:w-[60px] xs:h-[60px] xs:text-heading1 lg:w-[70px] lg:h-[70px] lg:text-display4  2xl:w-[80px] 2xl:h-[80px] 2xl:text-display3 flex items-center justify-center bg-[linear-gradient(to_top,#4ea0d7,#472ac0)] shadow-[-2px_4px_12px_#4ea0d7] transition-all ease-in hover:shadow-[-2px_-2px_10px_#472ac0]">
             <a
-              className="text-display3 rounded-[20px] text-center p-[20px] bg-[linear-gradient(to_top,#4ea0d7,#472ac0)] shadow-[-2px_4px_12px_#4ea0d7] transition-all ease-in hover:shadow-[-2px_-2px_10px_#472ac0]"
               href="https://api.whatsapp.com/send?phone=6285703020296"
               target="_blank"
               onClick={waClick}
@@ -60,13 +58,13 @@ export default function Contact({ emailClick, waClick }) {
           </div>
         </div>
       </div>
-      <div className="flex items-center col-span-3">
-        <p p className="text-heading1">
+      <div className="flex items-center md:col-span-2 xl:col-span-3">
+        <p p className="xs:text-heading4 md:text-heading2 2xl:text-heading1">
           Looking for a developer to join your team or build your next idea? I’m
           open to work and freelance gigs!
         </p>
       </div>
-      <div className=" text-center h-full flex items-center justify-end">
+      <div className="text-center h-full flex items-center justify-end md:col-span-4 xl:col-span-1">
         <a
           className="border-2 rounded-xl p-[50px] w-full h-full cursor-pointer flex items-center justify-center hover:opacity-[0.6] hover:rounded-[50%] transition-all ease-in"
           href="mailto:arif.3ana@gmail.com"

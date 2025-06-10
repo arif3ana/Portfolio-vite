@@ -1,16 +1,18 @@
 function Card({ image, title, content, id }) {
   return (
     <div
-      className={`flex ${
-        id % 2 == 0 ? "flex-row-reverse" : "flex-row"
-      } gap-[40px]`}
+      className={`flex xs:flex-col ${
+        id % 2 == 0
+          ? "lg:flex-row-reverse xs:gap-[20px]"
+          : "lg:flex-row xs:gap-[40px]"
+      } lg:gap-[40px]`}
     >
-      <div className="relative w-[45%] min-h-[380px]">
+      <div className="relative xs:w-full lg:w-[45%] lg:min-h-[380px]">
         {/* Layer belakang dengan border */}
         <div
           className={`absolute ${
-            id % 2 == 0 ? "top-[-7%] left-[5%]" : "bottom-[-7%] left-[-5%]"
-          }  w-full h-full border-[5px] border-cyan-400 rounded-xl z-0`}
+            id % 2 == 0 ? "xs:top-[-5%] xs:left-[3%] md:top-[-3%] md:left-[2%] lg:top-[-4%] lg:left-[3%] 2xl:top-[-6%] 2xl:left-[4%]" : "xs:bottom-[-5%] xs:left-[-3%] md:bottom-[-3%] md:left-[-2%] lg:bottom-[-3%] lg:left-[-3%] 2xl:bottom-[-6%] 2xl:left-[-4%]"
+          }  w-full h-full xs:border-[3px] md:border-[5px] border-cyan-400 rounded-xl z-0`}
         />
 
         {/* Layer depan (gambar) */}
@@ -23,18 +25,20 @@ function Card({ image, title, content, id }) {
           />
         </div>
       </div>
-      <div className="card-body flex flex-col justify-between w-[55%]">
+      <div className="card-body flex flex-col justify-between xs:w-full lg:w-[55%] xs:gap-[20px]">
         <div className="flex flex-col gap-[20px]">
           <div>
-            <h5 className="card-hero text-display3 text-s1">
+            <h5 className="xs:text-heading2 md:text-display4 2xl:text-display3 text-s1">
               PROJECT {id + 1}
             </h5>
-            <h5 className="card-title text-display2 font-bold">{title}</h5>
+            <h5 className="xs:text-display4 md:text-display3 2xl:text-display2 font-bold">
+              {title}
+            </h5>
           </div>
-          <p className="card-text text-heading1">{content}</p>
+          <p className="xs:text-heading4 md:text-heading2 2xl:text-heading1">{content}</p>
         </div>
         <div>
-          <button className="group relative text-heading1 tracking-[2px] flex justify-center items-center gap-[10px] cursor-pointer">
+          <button className="group relative xs:text-heading3 md:text-heading1 2xl:text-heading1 tracking-[2px] flex justify-center items-center gap-[10px] cursor-pointer">
             Preview
             <svg
               width="15"
@@ -51,7 +55,7 @@ function Card({ image, title, content, id }) {
                 stroke-linejoin="round"
               />
             </svg>
-            <span className="absolute bottom-0 left-0 w-full h-[1px] bg-s1 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
+            <span className="absolute bottom-0 left-0 w-full h-[3px] rounded-2xl bg-s1 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
           </button>
         </div>
       </div>

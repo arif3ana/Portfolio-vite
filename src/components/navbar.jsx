@@ -1,9 +1,9 @@
 import Resume from "../assets/Arif triana Resume.pdf";
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 flex justify-center bg-primary">
-      <div className="xl:max-w-[1280px] px-[25px] xl:px-0 w-full flex justify-between">
-        <p className="text-display1 text-s1 font-bold">AT</p>
+    <nav className="fixed top-0 left-0 right-0 z-20 flex justify-center bg-primary">
+      <div className="xl:max-w-[1280px] px-[25px] py-[6px] 2xl:px-0 w-full flex justify-between">
+        <p className="xs:text-display4 md:text-display3 2xl:text-display2 text-s1 font-bold">AT</p>
 
         {/* humburger menu */}
         {/* <button
@@ -32,7 +32,7 @@ export default function Navbar() {
           </div> */}
 
           <div className="offcanvas-body min-w-full">
-            <ul className="flex gap-[40px] justify-end text-heading1">
+            <ul className="flex xs:gap-[20px] 2xl:gap-[40px] justify-end xs:text-heading4 md:text-heading2 2xl:text-heading1 font-bold">
               <li>
                 <a className="hover:text-s1" href="#contact">
                   Hire Me

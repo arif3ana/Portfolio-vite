@@ -53,28 +53,26 @@ export default function About() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-[100dvh]">
-      <h3 className="text-display1 font-bold">About Me</h3>
+    <div className="flex flex-col justify-center items-center">
+      <h3 className="xs:text-display4 md:text-display3 2xl:text-display1 font-bold">
+        About Me
+      </h3>
 
-      <div className="about-content text-center flex flex-col gap-[25px] py-[60px]">
+      <div className="text-center flex flex-col gap-[25px] py-[60px]">
         <div className="flex flex-col gap-[10px]">
-          <ul className="nav nav-about flex gap-[60px] justify-center">
-            <li className="nav-item">
+          <ul className="flex gap-[60px] justify-center">
+            <li>
               <button
-                className=" about-list text-display3 font-bold cursor-pointer"
+                className="about-list xs:text-heading2 md:text-heading1 2xl:text-display3 font-bold cursor-pointer"
                 id="btn-who"
                 onClick={introduceHandle}
               >
                 Who i am
               </button>
             </li>
-            <li
-              className="nav-item"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
+            <li>
               <button
-                className=" about-list text-display3 font-bold cursor-pointer"
+                className=" about-list xs:text-heading2 md:text-heading1 2xl:text-display3 font-bold cursor-pointer"
                 id="btn-what"
                 onClick={myWorkHandle}
               >
@@ -82,28 +80,14 @@ export default function About() {
               </button>
             </li>
           </ul>
-          <hr className="border-[4px] border-[#212121] rounded-[5px] shadow-[-4px_-4px_10px_rgba(0,0,0,0.66)] mt-0" />
+          <hr className="xs:border-[2px] 2xl:border-[4px] border-[#212121] rounded-[5px] shadow-[-4px_-4px_10px_rgba(0,0,0,0.66)] mt-0" />
         </div>
-        <div className="nav-content text-heading1">{isParagraf}</div>
+        <div className="xs:text-heading4 md:text-heading2 2xl:text-heading1 xs:text-justify md:text-center">{isParagraf}</div>
       </div>
 
-      {/* <div className='section-button'>
-        <a className='btn-hire' href='#contact' data-aos='fade-up'
-            data-aos-duration='500'>
-          HIRE ME
-        </a>
-        <a href={Resume} download className='btn-resume' data-aos='fade-up' data-aos-duration='1000'>
-          RESUME
-        </a>
-      </div> */}
-
-      {/* <p className='title-skill' data-aos='fade-up' data-aos-duration='500'>
-        My Skills
-      </p> */}
-
-      <div className="py-[60px] flex flex-col gap-[40px]">
-        <ul className="flex items-center gap-[60px] flex-row">
-          <li>
+      <div className="2xl:py-[40px] flex flex-col gap-[40px]">
+        <ul className="flex flex-wrap items-center gap-x-[20px] gap-y-[30px] flex-row justify-center">
+          <li className="xs:w-[100px] sm:w-[140px] md:w-[160px]">
             <img
               src={html}
               alt="logo html"
@@ -112,7 +96,7 @@ export default function About() {
             />
             {/* <p className="text-heading1">Html</p> */}
           </li>
-          <li>
+          <li className="xs:w-[100px] sm:w-[140px] md:w-[160px]">
             <img
               src={css}
               alt="logo css"
@@ -121,7 +105,7 @@ export default function About() {
             />
             {/* <p className="text-heading1">Css</p> */}
           </li>
-          <li>
+          <li className="xs:w-[100px] sm:w-[140px] md:w-[160px]">
             <img
               src={js}
               alt="logo javascript"
@@ -130,7 +114,7 @@ export default function About() {
             />
             {/* <p className="text-heading1">Javascript</p> */}
           </li>
-          <li>
+          <li className="xs:w-[100px] sm:w-[140px] md:w-[160px]">
             <img
               src={php}
               alt="logo php"
@@ -139,7 +123,7 @@ export default function About() {
             />
             {/* <p className="text-heading1">PHP</p> */}
           </li>
-          <li>
+          <li className="xs:w-[100px] sm:w-[140px] md:w-[160px]">
             <img
               src={react}
               alt="logo reactjs"
@@ -148,7 +132,7 @@ export default function About() {
             />
             {/* <p className="text-heading1">React js</p> */}
           </li>
-          <li>
+          <li className="xs:w-[100px] sm:w-[140px] md:w-[160px]">
             <img
               src={laravel}
               alt="logo laravel"

@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 export default function Projects() {
   const limitData = projectData.slice(0, 3);
   return (
-    <div className="flex flex-col justify-center items-center gap-[120px] mt-[100px]">
-      <h3 className="text-display1 font-bold">Portfolio</h3>
-      <div className="flex flex-col gap-[120px]">
+    <div className="flex flex-col justify-center items-center xs:gap-[60px] md:gap-[86px] lg:gap-[120px] mt-[200px]">
+      <h3 className="xs:text-display4 md:text-display3 2xl:text-display1 font-bold">Portfolio</h3>
+      <div className="flex flex-col xs:gap-[80px] md:gap-[120px]">
         {limitData.reverse().map((proyek, index) => (
           <Card
             key={`${proyek.id}-${index}`}
