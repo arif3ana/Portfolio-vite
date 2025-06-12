@@ -1,7 +1,12 @@
-import { useMemo } from "react";
+import React from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Particle = () => {
-  const style = useMemo(() => {
+  const particleRef = React.useRef(null);
+  const { style, speed } = React.useMemo(() => {
     const size = Math.floor(Math.random() * (317 - 50 + 1)) + 50; // 50px - 317px
 
     // Maks posisi top/left = 100% - maxSize (dalam px atau %, tergantung container)
@@ -9,16 +14,42 @@ const Particle = () => {
     const top = Math.random() * safeArea;
     const left = Math.random() * safeArea;
 
+    // Buat speed-nya acak antara 0.3 sampai 1.2
+    const speed = Math.random() * (2.3 - 0.3) + 0.3;
+
     return {
-      width: `${size}px`,
-      height: `${size}px`,
-      top: `${top}%`,
-      left: `${left}%`,
+      style: {
+        width: `${size}px`,
+        height: `${size}px`,
+        top: `${top}%`,
+        left: `${left}%`,
+      },
+      speed,
+    };
+  }, []);
+
+  React.useLayoutEffect(() => {
+    const el = particleRef.current;
+
+    gsap.to(el, {
+      y: () => -(window.innerHeight * speed),
+      ease: "none",
+      scrollTrigger: {
+        trigger: document.body,
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true, // membuat animasi sinkron dengan scroll
+      },
+    });
+
+    return () => {
+      ScrollTrigger.killAll(el);
     };
   }, []);
 
   return (
     <div
+      ref={particleRef}
       className="bg-[#1A213B] rounded-full absolute opacity-[80%] blur-[10px]"
       style={style}
     />

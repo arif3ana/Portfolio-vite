@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React from "react";
 import Navbar from "../components/navbar";
 import HomePage from "../components/HomePage";
 import About from "../components/About";
@@ -10,8 +10,12 @@ import ReactGA from "react-ga4";
 import { reviewer } from "../utils/projectsData";
 import Particle from "../components/Particle";
 function Home() {
-  const particles = Array.from({ length: 12 });
-  useEffect(() => {
+  const particles = Array.from({ length: 15 });
+  const [showButton, setShowButton] = React.useState(false);
+  const [isClicked, setIsClicked] = React.useState(false);
+  const [lastScrollY, setLastScrollY] = React.useState(0);
+
+  React.useEffect(() => {
     ReactGA.send({
       hitType: "pageview",
       page: window.location.pathname,
@@ -55,6 +59,35 @@ function Home() {
       action: "Whatsaap contact Link Clicked",
       label: "Whatsaap Clicked",
     });
+  };
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const currentY = window.scrollY;
+
+      if (currentY > 100 && currentY < lastScrollY) {
+        // Scroll ke bawah & naik sedikit
+        setShowButton(true);
+      } else {
+        // Di paling atas atau scroll ke bawah
+        setShowButton(false);
+      }
+
+      setLastScrollY(currentY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
+  const handleClick = () => {
+    setIsClicked(true);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // Efek klik selama 200ms
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 200);
   };
 
   return (
@@ -104,6 +137,25 @@ function Home() {
         ))}
       </div>
 
+      {/* button scroll to top */}
+      <div
+        className={`fixed bottom-10 right-10 z-10 transition-opacity duration-300 ${
+          showButton ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        <button
+          onClick={handleClick}
+          className={`bg-[linear-gradient(to_bottom,#4ea0d7,#472ac0)]
+          xs:w-[50px] xs:h-[50px] xs:text-heading1
+          md:w-[60px] md:h-[60px] md:text-heading1
+          2xl:w-[80px] 2xl:h-[80px] 2xl:text-display3
+          flex justify-center items-center rounded-full cursor-pointer
+          transition-transform duration-200
+          ${isClicked ? "scale-90" : "scale-100"}`}
+        >
+          <i class="bi bi-arrow-bar-up"></i>
+        </button>
+      </div>
       <footer>
         <Footer
           linkedlinClicked={handleLinkedlin}

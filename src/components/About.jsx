@@ -5,32 +5,58 @@ import js from "../assets/img/js.webp";
 import php from "../assets/img/php.webp";
 import react from "../assets/img/React.webp";
 import laravel from "../assets/img/laravel.webp";
-import Resume from "../assets/Arif triana Resume.pdf";
-import { Link } from "react-router-dom";
 export default function About() {
+  // const who = (
+  //   <p className="about-article">
+  //     <span className="hello">Hello, I'm Arif Triana</span>, the top software
+  //     engineering graduate from high school. I am an active member of several
+  //     organizations and have completed an internship at DKIS (Agency of
+  //     Communication, Informatics, and Statistics), where I gained valuable
+  //     insights into technology. I specialize in full-stack development with a
+  //     focus on both frontend and backend website development. I am committed to
+  //     continuous learning and innovation in this field.{" "}
+  //     <Link to="/show-about" className="show">
+  //       .....Read More
+  //     </Link>
+  //   </p>
+  // );
   const who = (
     <p className="about-article">
-      <span className="hello">Hello, I'm Arif Triana</span>, the top software
-      engineering graduate from high school. I am an active member of several
-      organizations and have completed an internship at DKIS (Agency of
-      Communication, Informatics, and Statistics), where I gained valuable
-      insights into technology. I specialize in full-stack development with a
-      focus on both frontend and backend website development. I am committed to
-      continuous learning and innovation in this field.{" "}
-      <Link to="/show-about" className="show">
-        .....Read More
-      </Link>
+      Hello, I'm Arif Triana, a Full Stack Web Developer with one year
+      experience in website development. I have expertise in both frontend and
+      backend, with a focus on creating intuitive interfaces and efficient,
+      integrated backend systems. I am motivated by the challenge of creating
+      impactful, functional and easy-to-use digital solutions. My career goal is
+      to continue developing my technical skills and contribute to a team that
+      values collaboration, innovation, and continuous development.
     </p>
   );
 
+  // const what = (
+  //   <p className="about-article">
+  //     I am an end-to-end website development. My responsibilities include
+  //     website planning, design and development, both front-end (user interface)
+  //     and back-end (logic and database). I work closely with clients to realize
+  //     their vision, ensuring that the site is fit for purpose, performs
+  //     optimally, and is secure. My goal is to deliver responsive and optimized
+  //     web solutions to my clients.
+  //   </p>
+  // );
+
   const what = (
     <p className="about-article">
-      I am an end-to-end website development. My responsibilities include
-      website planning, design and development, both front-end (user interface)
-      and back-end (logic and database). I work closely with clients to realize
-      their vision, ensuring that the site is fit for purpose, performs
-      optimally, and is secure. My goal is to deliver responsive and optimized
-      web solutions to my clients.
+      As a Full Stack Web Developer, I develop websites end-to-end from
+      interface design to backend system integration. My responsibilities
+      include creating intuitive UIs as well as stable, secure and structured
+      backends. I usually use React and Material UI to build responsive
+      interfaces, and Laravel and MySQL/PostgreSQL to handle application logic
+      and data management. In certain projects such as landing pages or company
+      profiles, I also use WordPress as a faster and more efficient solution,
+      depending on the complexity and ultimate goal of the project. <br />
+      My main focus is on creating lightweight, easy-to-use, and publish-ready web
+      solutions. I love helping businesses and individuals build their digital
+      identity through websites that are professional, functional, and ready to
+      grow in the future.
     </p>
   );
 
@@ -82,7 +108,9 @@ export default function About() {
           </ul>
           <hr className="xs:border-[2px] 2xl:border-[4px] border-[#212121] rounded-[5px] shadow-[-4px_-4px_10px_rgba(0,0,0,0.66)] mt-0" />
         </div>
-        <div className="xs:text-heading4 md:text-heading2 2xl:text-heading1 xs:text-justify md:text-center">{isParagraf}</div>
+        <div className="xs:text-heading4 md:text-heading2 2xl:text-heading1 xs:text-justify md:text-center">
+          {isParagraf}
+        </div>
       </div>
 
       <div className="2xl:py-[40px] flex flex-col gap-[40px]">

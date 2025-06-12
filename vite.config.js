@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     port: 3000,
     allowedHosts:  [
-      '9054-180-251-237-216.ngrok-free.app', // ganti sesuai dengan URL ngrok Anda
+      '5471-180-251-231-49.ngrok-free.app', // ganti sesuai dengan URL ngrok Anda
     ],
   },
   build: {
