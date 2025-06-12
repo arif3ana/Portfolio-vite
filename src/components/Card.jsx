@@ -1,4 +1,18 @@
+import React from "react";
+
 function Card({ image, title, content, id }) {
+  const [activeLink, setActiveLink] = React.useState(false);
+
+  const handleClick = () => {
+    setActiveLink(!activeLink);
+  };
+
+  React.useEffect(() => {
+    let time = setTimeout(() => {
+      setActiveLink(false);
+    }, 1000);
+    return () => clearTimeout(time);
+  }, [activeLink]);
   return (
     <div
       className={`flex xs:flex-col ${
@@ -11,7 +25,9 @@ function Card({ image, title, content, id }) {
         {/* Layer belakang dengan border */}
         <div
           className={`absolute ${
-            id % 2 == 0 ? "xs:top-[-5%] xs:left-[3%] md:top-[-3%] md:left-[2%] lg:top-[-4%] lg:left-[3%] 2xl:top-[-6%] 2xl:left-[4%]" : "xs:bottom-[-5%] xs:left-[-3%] md:bottom-[-3%] md:left-[-2%] lg:bottom-[-3%] lg:left-[-3%] 2xl:bottom-[-6%] 2xl:left-[-4%]"
+            id % 2 == 0
+              ? "xs:top-[-5%] xs:left-[3%] md:top-[-3%] md:left-[2%] lg:top-[-4%] lg:left-[3%] 2xl:top-[-6%] 2xl:left-[4%]"
+              : "xs:bottom-[-5%] xs:left-[-3%] md:bottom-[-3%] md:left-[-2%] lg:bottom-[-3%] lg:left-[-3%] 2xl:bottom-[-6%] 2xl:left-[-4%]"
           }  w-full h-full xs:border-[3px] md:border-[5px] border-cyan-400 rounded-xl z-0`}
         />
 
@@ -35,10 +51,15 @@ function Card({ image, title, content, id }) {
               {title}
             </h5>
           </div>
-          <p className="xs:text-heading4 md:text-heading2 2xl:text-heading1">{content}</p>
+          <p className="xs:text-heading4 md:text-heading2 2xl:text-heading1">
+            {content}
+          </p>
         </div>
         <div>
-          <button className="group relative xs:text-heading3 md:text-heading1 2xl:text-heading1 tracking-[2px] flex justify-center items-center gap-[10px] cursor-pointer">
+          <button
+            onClick={() => handleClick()}
+            className="group relative xs:text-heading3 md:text-heading1 2xl:text-heading1 tracking-[2px] flex justify-center items-center gap-[10px] cursor-pointer"
+          >
             Preview
             <svg
               width="15"
@@ -55,7 +76,11 @@ function Card({ image, title, content, id }) {
                 stroke-linejoin="round"
               />
             </svg>
-            <span className="absolute bottom-0 left-0 w-full h-[3px] rounded-2xl bg-s1 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300" />
+            <span
+              className={`${
+                activeLink ? "scale-x-100" : "scale-x-0"
+              } absolute bottom-0 left-0 w-full h-[3px] rounded-2xl bg-s1 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300`}
+            />
           </button>
         </div>
       </div>
