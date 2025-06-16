@@ -1,10 +1,11 @@
 import React from "react";
 
-function Card({ image, title, content, id }) {
+function Card({ image, title, content, id, url, imagePosition, isImage }) {
   const [activeLink, setActiveLink] = React.useState(false);
 
-  const handleClick = () => {
+  const handleClick = (href) => {
     setActiveLink(!activeLink);
+    window.open(href, "_blank");
   };
 
   React.useEffect(() => {
@@ -33,12 +34,25 @@ function Card({ image, title, content, id }) {
 
         {/* Layer depan (gambar) */}
         <div className="relative w-full h-full bg-gray-300 rounded-xl overflow-hidden z-10">
-          <img
-            src={image}
-            alt={`© ${new Date().getFullYear()} created by Arif Triana`}
-            loading="lazy"
-            className={`object-cover w-full h-full`}
-          />
+          {isImage ? (
+            <img
+              src={image}
+              alt={`© ${new Date().getFullYear()} created by Arif Triana`}
+              loading="lazy"
+              className={`object-cover w-full h-full ${imagePosition}`}
+            />
+          ) : (
+            <video
+              loop
+              autoPlay
+              muted
+              playsInline
+              src={image}
+              title={title}
+              className={`object-cover w-full h-full ${imagePosition}`}
+              loading="lazy"
+            />
+          )}
         </div>
       </div>
       <div className="card-body flex flex-col justify-between xs:w-full lg:w-[55%] xs:gap-[20px]">
@@ -51,14 +65,18 @@ function Card({ image, title, content, id }) {
               {title}
             </h5>
           </div>
-          <p className="xs:text-heading4 md:text-heading2 2xl:text-heading1">
-            {content}
-          </p>
+          <p
+            className="xs:text-heading4 md:text-heading2 2xl:text-heading1"
+            dangerouslySetInnerHTML={{ __html: content }}
+          />
         </div>
         <div>
           <button
-            onClick={() => handleClick()}
-            className="group relative xs:text-heading3 md:text-heading1 2xl:text-heading1 tracking-[2px] flex justify-center items-center gap-[10px] cursor-pointer"
+            disabled={url != null ? false : true}
+            onClick={() => handleClick(url)}
+            className={`group relative xs:text-heading3 md:text-heading1 2xl:text-heading1 tracking-[2px] flex justify-center items-center gap-[10px] cursor-pointer ${
+              url != null ? "" : "opacity-50"
+            }`}
           >
             Preview
             <svg

@@ -1,47 +1,23 @@
 import { useEffect, useState } from "react";
-import html from "../assets/img/html.webp";
-import css from "../assets/img/CSS.webp";
-import js from "../assets/img/js.webp";
-import php from "../assets/img/php.webp";
-import react from "../assets/img/React.webp";
-import laravel from "../assets/img/laravel.webp";
+// import html from "../assets/img/html.webp";
+// import css from "../assets/img/CSS.webp";
+// import js from "../assets/img/js.webp";
+// import php from "../assets/img/php.webp";
+// import react from "../assets/img/React.webp";
+// import laravel from "../assets/img/laravel.webp";
 export default function About() {
-  // const who = (
-  //   <p className="about-article">
-  //     <span className="hello">Hello, I'm Arif Triana</span>, the top software
-  //     engineering graduate from high school. I am an active member of several
-  //     organizations and have completed an internship at DKIS (Agency of
-  //     Communication, Informatics, and Statistics), where I gained valuable
-  //     insights into technology. I specialize in full-stack development with a
-  //     focus on both frontend and backend website development. I am committed to
-  //     continuous learning and innovation in this field.{" "}
-  //     <Link to="/show-about" className="show">
-  //       .....Read More
-  //     </Link>
-  //   </p>
-  // );
   const who = (
     <p className="about-article">
-      Hello, I'm Arif Triana, a Full Stack Web Developer with one year
-      experience in website development. I have expertise in both frontend and
-      backend, with a focus on creating intuitive interfaces and efficient,
-      integrated backend systems. I am motivated by the challenge of creating
-      impactful, functional and easy-to-use digital solutions. My career goal is
-      to continue developing my technical skills and contribute to a team that
-      values collaboration, innovation, and continuous development.
+      Hello, I'm Arif Triana, a Full Stack Web Developer with 1 year of
+      professional experience in web development. I have expertise in both
+      frontend and backend, with a focus on creating intuitive interfaces and
+      efficient, integrated backend systems. I am motivated by the challenge of
+      creating impactful, functional and easy-to-use digital solutions. My
+      career goal is to continue developing my technical skills and contribute
+      to a team that values collaboration, innovation, and continuous
+      development.
     </p>
   );
-
-  // const what = (
-  //   <p className="about-article">
-  //     I am an end-to-end website development. My responsibilities include
-  //     website planning, design and development, both front-end (user interface)
-  //     and back-end (logic and database). I work closely with clients to realize
-  //     their vision, ensuring that the site is fit for purpose, performs
-  //     optimally, and is secure. My goal is to deliver responsive and optimized
-  //     web solutions to my clients.
-  //   </p>
-  // );
 
   const what = (
     <p className="about-article">
@@ -53,10 +29,10 @@ export default function About() {
       and data management. In certain projects such as landing pages or company
       profiles, I also use WordPress as a faster and more efficient solution,
       depending on the complexity and ultimate goal of the project. <br />
-      My main focus is on creating lightweight, easy-to-use, and publish-ready web
-      solutions. I love helping businesses and individuals build their digital
-      identity through websites that are professional, functional, and ready to
-      grow in the future.
+      My main focus is on creating lightweight, easy-to-use, and publish-ready
+      web solutions. I love helping businesses and individuals build their
+      digital identity through websites that are professional, functional, and
+      ready to grow in the future.
     </p>
   );
 
@@ -117,7 +93,7 @@ export default function About() {
         <ul className="flex flex-wrap items-center gap-x-[20px] gap-y-[30px] flex-row justify-center">
           <li className="xs:w-[100px] sm:w-[140px] md:w-[160px]">
             <img
-              src={html}
+              src={"/assets/icon/html.webp"}
               alt="logo html"
               className="logo-img w-full object-contain aspect-16/6"
               loading="lezy"
@@ -126,7 +102,7 @@ export default function About() {
           </li>
           <li className="xs:w-[100px] sm:w-[140px] md:w-[160px]">
             <img
-              src={css}
+              src={"/assets/icon/CSS.webp"}
               alt="logo css"
               className="logo-img w-full object-contain aspect-16/6"
               loading="lezy"
@@ -135,7 +111,7 @@ export default function About() {
           </li>
           <li className="xs:w-[100px] sm:w-[140px] md:w-[160px]">
             <img
-              src={js}
+              src={"/assets/icon/js.webp"}
               alt="logo javascript"
               className="logo-img w-full object-contain aspect-16/6"
               loading="lezy"
@@ -144,7 +120,7 @@ export default function About() {
           </li>
           <li className="xs:w-[100px] sm:w-[140px] md:w-[160px]">
             <img
-              src={php}
+              src={"/assets/icon/php.webp"}
               alt="logo php"
               className="logo-img w-full object-contain aspect-16/6"
               loading="lezy"
@@ -153,7 +129,7 @@ export default function About() {
           </li>
           <li className="xs:w-[100px] sm:w-[140px] md:w-[160px]">
             <img
-              src={react}
+              src={"/assets/icon/React.webp"}
               alt="logo reactjs"
               className="logo-img w-full object-contain aspect-16/6"
               loading="lezy"
@@ -162,7 +138,7 @@ export default function About() {
           </li>
           <li className="xs:w-[100px] sm:w-[140px] md:w-[160px]">
             <img
-              src={laravel}
+              src={"/assets/icon/laravel.webp"}
               alt="logo laravel"
               className="logo-img w-full object-contain aspect-16/6"
               loading="lezy"

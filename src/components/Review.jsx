@@ -1,4 +1,3 @@
-import dumy from "../assets/img/dumy.webp";
 export default function PAgeReview({ ...props }) {
   return (
     <div className="flex flex-col items-center mt-[250px] xs:gap-[40px] 2xl:gap-[80px]">

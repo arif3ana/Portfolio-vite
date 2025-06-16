@@ -7,7 +7,8 @@ import Review from "../components/Review";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import ReactGA from "react-ga4";
-import { reviewer } from "../utils/projectsData";
+// import { reviewer } from "../utils/projectsData";
+import review from "../data/review.json";
 import Particle from "../components/Particle";
 function Home() {
   const particles = Array.from({ length: 15 });
@@ -110,7 +111,7 @@ function Home() {
           <Projects />
         </article>
         <article id="portfolio">
-          {reviewer.map((review) => {
+          {review.map((review) => {
             if (!review.name || !review.content) {
               return null;
             }

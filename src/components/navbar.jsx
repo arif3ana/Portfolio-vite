@@ -1,10 +1,9 @@
 import React from "react";
-import Resume from "../assets/Arif triana Resume.pdf";
 export default function Navbar() {
   const [activeLink, setActiveLink] = React.useState(null);
   const menuItems = [
     { id: "contact", label: "Hire Me", href: "#contact" },
-    { id: "resume", label: "Resume", href: Resume, download: true },
+    { id: "resume", label: "Resume", href: "/assets/Arif triana Resume.pdf", download: true },
   ];
 
   React.useEffect(() => {
@@ -17,7 +16,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-20 flex justify-center bg-primary">
       <div className="xl:max-w-[1280px] px-[25px] py-[6px] 2xl:px-0 w-full flex justify-between">
-        <p className="xs:text-display4 md:text-display3 2xl:text-display2 text-s1 font-bold">
+        <p className="xs:text-display4 md:text-display3 2xl:text-display2 text-s1 font-bold cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
           AT
         </p>
 

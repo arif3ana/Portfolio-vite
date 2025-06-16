@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Kreatif Kuliner",
+    "image": "/assets/portfolio/kuliner.webp",
+    "is_image": true,
+    "image_position": "lg:object-left xs:object-center",
+    "description": "An interactive food recipe blog website that allows users to create, edit, delete, and read recipes. Developed using the MERN stack, with a focus on optimized CRUD flow and smooth user experience. I built this project independently as a practical exercise to hone my web development skills.",
+    "url": "https://kreatifkuliner.vercel.app"
+  },
+  {
+    "id": 2,
+    "title": "Narima Website",
+    "image": "/assets/portfolio/narima-landingpage.webm",
+    "is_image": false,
+    "image_position": "lg:object-left xs:object-center",
+    "description": "A company profile website for a digital agency that showcases its services, portfolio, and client testimonials. Built using Next.js and Material UI. I act as a web developer with the Narima team, focusing on feature development and performance optimization to improve user experience.",
+    "url": "https://narima.id"
+  },
+  {
+    "id": 3,
+    "title": "Gen8 Website",
+    "image": "/assets/portfolio/gen8-website.webm",
+    "is_image": false,
+    "image_position": "object-center",
+    "description": "Information and branding website for a youth community platform featuring inspirational programs and events. Built using Laravel and Tailwind CSS. I act as a web developer in the Narima team, focusing on UI implementation, content integration, and cross-device display optimization.",
+    "url": "https://gen8.or.id"
+  },
+  {
+    "id": 4,
+    "title": "Trustee",
+    "image": "/assets/portfolio/trustee-web-portal.webm",
+    "is_image": false,
+    "image_position": "object-center",
+    "description": "An enterprise dashboard designed to digitize internal systems, including core services, ticketing systems, email notifications, user management, and invoicing systems. Built using Laravel for the backend and React.js for the frontend. I act as a full stack web developer in the Narima team.",
+    "url": null
+  }
+]

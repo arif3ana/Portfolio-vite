@@ -1,4 +1,3 @@
-import React from "react";
 import developer from "../assets/img/developer.png";
 import design from "../assets/img/design.png";
 export default function Service() {

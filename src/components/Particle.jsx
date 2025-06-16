@@ -50,7 +50,7 @@ const Particle = () => {
   return (
     <div
       ref={particleRef}
-      className="bg-[#1A213B] rounded-full absolute opacity-[80%] blur-[10px]"
+      className="bg-[#1A213B] rounded-full absolute"
       style={style}
     />
   );
