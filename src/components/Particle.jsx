@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Particle = () => {
   const particleRef = React.useRef(null);
   const { style, speed } = React.useMemo(() => {
-    const size = Math.floor(Math.random() * (317 - 50 + 1)) + 50; // 50px - 317px
+    const size = Math.floor(Math.random() * (200 - 50 + 1)) + 50; // 50px - 200px
 
     // Maks posisi top/left = 100% - maxSize (dalam px atau %, tergantung container)
     const safeArea = 100 - (size / window.innerHeight) * 100;

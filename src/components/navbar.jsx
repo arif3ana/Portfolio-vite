@@ -3,7 +3,7 @@ export default function Navbar() {
   const [activeLink, setActiveLink] = React.useState(null);
   const menuItems = [
     { id: "contact", label: "Hire Me", href: "#contact" },
-    { id: "resume", label: "Resume", href: "/assets/Arif triana Resume.pdf", download: true },
+    // { id: "resume", label: "Resume", href: "/assets/Arif triana Resume.pdf", download: true },
   ];
 
   React.useEffect(() => {

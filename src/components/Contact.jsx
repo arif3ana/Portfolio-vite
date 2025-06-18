@@ -49,28 +49,36 @@ export default function Contact({ emailClick, waClick }) {
           Let’s Work <br /> Together
         </h3>
         <div className="flex gap-[40px]">
-          <div className={`${isClicked == 1 ? "scale-90" : "scale-100"} rounded-[20px] text-center xs:w-[60px] xs:h-[60px] xs:text-heading1 lg:w-[70px] lg:h-[70px] lg:text-display4 2xl:w-[80px] 2xl:h-[80px] 2xl:text-display3 flex items-center justify-center bg-[linear-gradient(to_top,#4ea0d7,#472ac0)] shadow-[-2px_4px_12px_#4ea0d7] transition-all ease-in hover:shadow-[-2px_-2px_10px_#472ac0]`}>
-            <a
-              href="mailto:arif.3ana@gmail.com"
-              target="_blank"
-              onClick={() => {
-                handleClick(1), emailClick;
-              }}
+          <a
+            href="mailto:arif.3ana@gmail.com"
+            target="_blank"
+            onClick={() => {
+              handleClick(1), emailClick;
+            }}
+          >
+            <div
+              className={`${
+                isClicked == 1 ? "scale-90" : "scale-100"
+              } rounded-[20px] text-center xs:w-[60px] xs:h-[60px] xs:text-heading1 lg:w-[70px] lg:h-[70px] lg:text-display4 2xl:w-[80px] 2xl:h-[80px] 2xl:text-display3 flex items-center justify-center bg-[linear-gradient(to_top,#4ea0d7,#472ac0)] shadow-[-2px_4px_12px_#4ea0d7] transition-all ease-in hover:shadow-[-2px_-2px_10px_#472ac0]`}
             >
               <i className="bi bi-envelope-at-fill" />
-            </a>
-          </div>
-          <div className={`${isClicked == 2 ? "scale-90" : "scale-100"} rounded-[20px] text-center xs:w-[60px] xs:h-[60px] xs:text-heading1 lg:w-[70px] lg:h-[70px] lg:text-display4  2xl:w-[80px] 2xl:h-[80px] 2xl:text-display3 flex items-center justify-center bg-[linear-gradient(to_top,#4ea0d7,#472ac0)] shadow-[-2px_4px_12px_#4ea0d7] transition-all ease-in hover:shadow-[-2px_-2px_10px_#472ac0]`}>
-            <a
-              href="https://api.whatsapp.com/send?phone=6285703020296"
-              target="_blank"
-              onClick={() => {
-                handleClick(2), waClick;
-              }}
+            </div>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=6285703020296"
+            target="_blank"
+            onClick={() => {
+              handleClick(2), waClick;
+            }}
+          >
+            <div
+              className={`${
+                isClicked == 2 ? "scale-90" : "scale-100"
+              } rounded-[20px] text-center xs:w-[60px] xs:h-[60px] xs:text-heading1 lg:w-[70px] lg:h-[70px] lg:text-display4  2xl:w-[80px] 2xl:h-[80px] 2xl:text-display3 flex items-center justify-center bg-[linear-gradient(to_top,#4ea0d7,#472ac0)] shadow-[-2px_4px_12px_#4ea0d7] transition-all ease-in hover:shadow-[-2px_-2px_10px_#472ac0]`}
             >
               <i className="bi bi-whatsapp" />
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
       <div className="flex items-center md:col-span-2 xl:col-span-3">
