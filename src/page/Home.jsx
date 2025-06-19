@@ -7,7 +7,6 @@ import Review from "../components/Review";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import ReactGA from "react-ga4";
-// import { reviewer } from "../utils/projectsData";
 import review from "../data/review.json";
 import Particle from "../components/Particle";
 function Home() {
