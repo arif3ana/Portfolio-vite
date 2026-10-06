@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 export default function About() {
   const who = (
     <p className="about-article">
-      Hello, I'm Arif Triana, a Full Stack Web Developer with 1 year of
+      Hello, I&apos;m Arif Triana, a Full Stack Web Developer with 1 year of
       professional experience in web development. I have expertise in both
       frontend and backend, with a focus on creating intuitive interfaces and
       efficient, integrated backend systems. I am motivated by the challenge of

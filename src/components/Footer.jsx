@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import SosialIcons from "./SosialIcons";
 export default function Footer({
   instagramClicked,
   linkedlinClicked,
-  githubClicked,
+  gitlabClicked,
 }) {
   return (
     <div className="flex flex-col mt-[100px] mb-[40px]">
@@ -14,7 +15,7 @@ export default function Footer({
           isFooter={true}
           instagramClicked={instagramClicked}
           linkedlinClicked={linkedlinClicked}
-          githubClicked={githubClicked}
+          gitlabClicked={gitlabClicked}
         />
       </div>
 
@@ -27,3 +28,9 @@ export default function Footer({
     </div>
   );
 }
+
+Footer.propTypes = {
+  instagramClicked: PropTypes.func.isRequired,
+  linkedlinClicked: PropTypes.func.isRequired,
+  gitlabClicked: PropTypes.func.isRequired,
+};

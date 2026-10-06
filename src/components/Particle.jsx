@@ -28,6 +28,7 @@ const Particle = () => {
     };
   }, []);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   React.useLayoutEffect(() => {
     const el = particleRef.current;
 

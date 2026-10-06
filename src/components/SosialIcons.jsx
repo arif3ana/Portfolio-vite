@@ -3,7 +3,7 @@ import React from "react";
 function SosialIcons({
   instagramClicked,
   linkedlinClicked,
-  githubClicked,
+  gitlabClicked,
   className,
   isFooter = false,
 }) {
@@ -30,7 +30,7 @@ function SosialIcons({
           handleClick(1), instagramClicked;
         }}
         href="https://www.instagram.com/arif.3ana/"
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         <i className="bi bi-instagram bg-transparent" />
       </a>
@@ -42,7 +42,7 @@ function SosialIcons({
           handleClick(2), linkedlinClicked;
         }}
         href="https://linkedin.com/in/arif-triana-48bb74254"
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         <i className="bi bi-linkedin bg-transparent" />
       </a>
@@ -51,12 +51,12 @@ function SosialIcons({
           isClicked == 3 ? "scale-90" : "scale-100"
         } bg-[linear-gradient(to_bottom,#4ea0d7,#472ac0)] xs:w-[50px] xs:h-[50px] xs:text-heading1 md:w-[60px] md:h-[60px] md:text-heading1 2xl:w-[80px] 2xl:h-[80px] 2xl:text-display3 flex justify-center items-center rounded-full`}
         onClick={() => {
-          handleClick(3), githubClicked;
+          handleClick(3), gitlabClicked;
         }}
-        href="https://github.com/arif3ana"
-        target="_blank"
+        href="https://gitlab.com/arif.3ana"
+        target="_blank" rel="noreferrer"
       >
-        <i className="bi bi-github bg-transparent" />
+        <i className="bi bi-gitlab bg-transparent" />
       </a>
     </div>
   );

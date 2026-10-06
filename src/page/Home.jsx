@@ -37,11 +37,11 @@ function Home() {
       label: "Instagram icon",
     });
   };
-  const handleGithub = () => {
+  const handleGitlab = () => {
     ReactGA.event({
-      category: "Github",
-      action: "Github Clicked",
-      label: "Github icon",
+      category: "Gitlab",
+      action: "Gitlab Clicked",
+      label: "Gitlab icon",
     });
   };
 
@@ -99,7 +99,7 @@ function Home() {
         <HomePage
           linkedlinClicked={handleLinkedlin}
           instagramClicked={handleInstagram}
-          githubClicked={handleGithub}
+          gitlabClicked={handleGitlab}
         />
       </section>
       <main>
@@ -153,14 +153,14 @@ function Home() {
           transition-transform duration-200
           ${isClicked ? "scale-90" : "scale-100"}`}
         >
-          <i class="bi bi-arrow-bar-up"></i>
+          <i className="bi bi-arrow-bar-up"></i>
         </button>
       </div>
       <footer>
         <Footer
           linkedlinClicked={handleLinkedlin}
           instagramClicked={handleInstagram}
-          githubClicked={handleGithub}
+          gitlabClicked={handleGitlab}
         />
       </footer>
     </>

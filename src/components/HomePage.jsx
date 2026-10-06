@@ -2,7 +2,7 @@ import SosialIcons from "./SosialIcons";
 export default function FirstPage({
   instagramClicked,
   linkedlinClicked,
-  githubClicked,
+  gitlabClicked,
 }) {
   return (
     <div className="min-h-[100dvh] flex flex-col justify-center">
@@ -15,7 +15,7 @@ export default function FirstPage({
         </div>
         <SosialIcons
           className={"hero"}
-          githubClicked={githubClicked}
+          gitlabClicked={gitlabClicked}
           linkedlinClicked={linkedlinClicked}
           instagramClicked={instagramClicked}
         />

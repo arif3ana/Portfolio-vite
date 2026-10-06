@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 export default function Contact({ emailClick, waClick }) {
   const [isClicked, setIsClicked] = React.useState(false);
@@ -54,7 +55,7 @@ export default function Contact({ emailClick, waClick }) {
             target="_blank"
             onClick={() => {
               handleClick(1), emailClick;
-            }}
+            }} rel="noreferrer"
           >
             <div
               className={`${
@@ -69,7 +70,7 @@ export default function Contact({ emailClick, waClick }) {
             target="_blank"
             onClick={() => {
               handleClick(2), waClick;
-            }}
+            }} rel="noreferrer"
           >
             <div
               className={`${
@@ -82,7 +83,7 @@ export default function Contact({ emailClick, waClick }) {
         </div>
       </div>
       <div className="flex items-center md:col-span-2 xl:col-span-3">
-        <p p className="xs:text-heading4 md:text-heading2 2xl:text-heading1">
+        <p className="xs:text-heading4 md:text-heading2 2xl:text-heading1">
           Looking for a developer to join your team or build your next idea? I’m
           open to work and freelance gigs!
         </p>
@@ -91,7 +92,7 @@ export default function Contact({ emailClick, waClick }) {
         <a
           className="border-2 rounded-xl p-[50px] w-full h-full cursor-pointer flex items-center justify-center hover:opacity-[0.6] hover:rounded-[50%] transition-all ease-in"
           href="mailto:arif.3ana@gmail.com"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           <svg
             className="w-[50px] h-[50px] text-white"
@@ -102,9 +103,9 @@ export default function Contact({ emailClick, waClick }) {
             <path
               d="M1.95911 13.125L13.2091 1.875M13.2091 1.875H1.95911M13.2091 1.875V13.125"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </a>
@@ -112,6 +113,11 @@ export default function Contact({ emailClick, waClick }) {
     </div>
   );
 }
+
+Contact.propTypes = {
+  emailClick: PropTypes.func,
+  waClick: PropTypes.func,
+};
 
 {
   /* form email */

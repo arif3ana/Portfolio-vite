@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 function Card({ image, title, content, id, url, imagePosition, isImage }) {
   const [activeLink, setActiveLink] = React.useState(false);
@@ -89,9 +90,9 @@ function Card({ image, title, content, id, url, imagePosition, isImage }) {
               <path
                 d="M1.95911 13.125L13.2091 1.875M13.2091 1.875H1.95911M13.2091 1.875V13.125"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
             <span
@@ -105,5 +106,15 @@ function Card({ image, title, content, id, url, imagePosition, isImage }) {
     </div>
   );
 }
+
+Card.propTypes = {
+  id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  image: PropTypes.string,
+  title: PropTypes.string,
+  content: PropTypes.string,
+  url: PropTypes.string,
+  imagePosition: PropTypes.string,
+  isImage: PropTypes.bool,
+};
 
 export default Card;
